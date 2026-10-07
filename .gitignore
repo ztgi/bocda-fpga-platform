@@ -1,0 +1,71 @@
+# Build outputs are never source deliveries.
+build/
+releases/
+*.runs/
+*.cache/
+*.gen/
+*.sim/
+.Xil/
+*.jou
+*.log
+*.str
+*.dcp
+*.bit
+*.ltx
+*.xsa
+*.elf
+*.map
+*.o
+*.a
+*.pyc
+__pycache__/
+.metadata/
+Debug/
+Release/
+bsp/
+bspinclude/
+bsplib/
+export/
+ip_user_files/
+ipshared/
+hdl/
+sim/
+synth/
+*.bda
+*.ui
+*.xpr
+vv_index.xml
+# Unreviewed historical scripts are local material, not reproducible entry points.
+projects/adrv9009/miniitx/scripts/*
+!projects/adrv9009/miniitx/scripts/tx_stage1_synth_pre.tcl
+!projects/adrv9009/miniitx/scripts/tx_stage1_impl_pre.tcl
+!projects/adrv9009/miniitx/scripts/tx_stage1_fixed_incremental_impl_pre.tcl
+!projects/adrv9009/miniitx/scripts/tx_stage1_fixed_incremental_final_pre.tcl
+!projects/adrv9009/miniitx/scripts/tests/
+!projects/adrv9009/miniitx/scripts/tests/**
+# Company implementation: local only until separate redistribution permission.
+/state_change/
+/bram_rd_wr/
+/wave_spi_new/
+/pulse_gen_in/
+/library/ip/
+/library/cordic_demod/
+/library/datamap/
+# Public ADI HDL is also an external dependency in this first curated snapshot;
+# obtain its matching version together with the authorized RX IP repositories.
+/library/
+/projects/adrv9009/miniitx/adrv9009_zc706.srcs/sources_1/new/
+# Existing application includes AD9378-AD9379 API licensed files/company edits.
+# Keep all locally, publish only the explicitly repository-owned TX additions.
+/projects/adrv9009/miniitx/Workspace/adrv9009_test/src/*
+!/projects/adrv9009/miniitx/Workspace/adrv9009_test/src/app/
+/projects/adrv9009/miniitx/Workspace/adrv9009_test/src/app/*
+!/projects/adrv9009/miniitx/Workspace/adrv9009_test/src/app/tx_stage1_test.c
+!/projects/adrv9009/miniitx/Workspace/adrv9009_test/src/app/tx_stage1_test.h
+!/projects/adrv9009/miniitx/Workspace/adrv9009_test/src/app/tx_stage2_*.c
+!/projects/adrv9009/miniitx/Workspace/adrv9009_test/src/app/tx_stage2_*.h
+# Local personal material.
+简历.pdf
+bocda_gtx_ad9528_interview_qa.md
+docs/architecture_audit/
+docs/images/tx_signal_validation/
